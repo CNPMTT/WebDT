@@ -26,6 +26,8 @@ public class SuKienDao {
             	sk.setNgayBD(rs.getString("NgayBD"));
             	sk.setNgayKT(rs.getString("NgayKT"));
             	sk.setMaNV(rs.getString("MaNV"));
+            	sk.setKhuyenMai(rs.getFloat("KhuyenMai"));
+            	
             	list.add(sk);
             }
             cons.close();

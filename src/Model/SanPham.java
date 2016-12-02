@@ -5,6 +5,7 @@ public class SanPham {
     private String TenSP;
     private double SoLuong;
     private double GiaBan;
+    private String GiaBanFormat;
     private String ManHinh;
     private String CPU;
     private String RAM;
@@ -36,7 +37,7 @@ public class SanPham {
 	public SanPham(String maSP, String tenSP, double soLuong, double giaBan, String manHinh, String cPU, String rAM,
 			String heDieuHanh, String sim, String cameraTruoc, String cameraSau, String boNhoTrong, String hoTroTheNho,
 			String pin, String maNCC, String maHSX, String maLSP, String hinhSP, String moTaSP, String hinhAnh2,
-			String danhGiaSP, String hinhAnh3, String tenNCC, String tenHSX, String tenLSP) {
+			String danhGiaSP, String hinhAnh3, String tenNCC, String tenHSX, String tenLSP, String giaBanFormat) {
 		super();
 		MaSP = maSP;
 		TenSP = tenSP;
@@ -63,6 +64,17 @@ public class SanPham {
 		TenNCC = tenNCC;
 		TenHSX = tenHSX;
 		TenLSP = tenLSP;
+		GiaBanFormat = giaBanFormat;
+	}
+
+
+	public String getGiaBanFormat() {
+		return GiaBanFormat;
+	}
+
+
+	public void setGiaBanFormat(String giaBanFormat) {
+		GiaBanFormat = giaBanFormat;
 	}
 
 

@@ -10,26 +10,58 @@ public class HDBH {
     private String TenSP;
     private double SLBan;
     private double GiaBan;
+    private String GiaBanFormat;
     private String NgayLap;
+    private String TrangThai;
    
 	public HDBH() {
 		super();
 	}
 
-	public HDBH(String maHD, String maKH, String maNV, String maSP, double sLBan, double giaBan, 
-			String ngayLap, String tenKH, String tenNV, String tenSP) {
+	
+
+	public String getTrangThai() {
+		return TrangThai;
+	}
+
+
+
+	public void setTrangThai(String trangThai) {
+		TrangThai = trangThai;
+	}
+
+
+
+	public HDBH(String maHD, String maKH, String tenKH, String maNV, String tenNV, String maSP, String tenSP,
+			double sLBan, double giaBan, String ngayLap, String trangThai,String giaBanFormat) {
 		super();
 		MaHD = maHD;
 		MaKH = maKH;
+		TenKH = tenKH;
 		MaNV = maNV;
+		TenNV = tenNV;
 		MaSP = maSP;
+		TenSP = tenSP;
 		SLBan = sLBan;
 		GiaBan = giaBan;
 		NgayLap = ngayLap;
-		TenKH = tenKH;
-		TenNV = tenNV;
-		TenSP = tenSP;
+		TrangThai = trangThai;
+		GiaBanFormat = giaBanFormat;
 	}
+
+
+
+	public String getGiaBanFormat() {
+		return GiaBanFormat;
+	}
+
+
+
+	public void setGiaBanFormat(String giaBanFormat) {
+		GiaBanFormat = giaBanFormat;
+	}
+
+
 
 	public String getTenKH() {
 		return TenKH;

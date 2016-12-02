@@ -5,6 +5,7 @@ public class CT_PN {
     private String MaSP;
     private float SLNhap;
     private float GiaNhap;
+    private float GiaBan;
     private float ThanhTien;
     private String TenSP;
     
@@ -12,7 +13,8 @@ public class CT_PN {
 		super();
 	}
 
-	public CT_PN(String maPN, String maSP, float sLNhap, float giaNhap, float thanhTien, String tenSP) {
+	public CT_PN(String maPN, String maSP, float sLNhap, float giaNhap, float thanhTien, String tenSP,
+			float giaBan) {
 		super();
 		MaPN = maPN;
 		MaSP = maSP;
@@ -20,6 +22,15 @@ public class CT_PN {
 		GiaNhap = giaNhap;
 		ThanhTien = thanhTien;
 		TenSP = tenSP;
+		GiaBan = giaBan;
+	}
+
+	public float getGiaBan() {
+		return GiaBan;
+	}
+
+	public void setGiaBan(float giaBan) {
+		GiaBan = giaBan;
 	}
 
 	public String getMaPN() {

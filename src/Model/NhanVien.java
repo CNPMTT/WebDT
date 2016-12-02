@@ -7,7 +7,7 @@ public class NhanVien {
 	private String SDT;
 	private String DiaChi;
 	private String GioiTinh;
-	private double Luong;
+	private float Luong;
 	private String NgSinh;
 	private String TaiKhoan;
 	private String MatKhau;
@@ -74,11 +74,11 @@ public class NhanVien {
 		GioiTinh = gioiTinh;
 	}
 
-	public double getLuong() {
+	public float getLuong() {
 		return Luong;
 	}
 
-	public void setLuong(double luong) {
+	public void setLuong(float luong) {
 		Luong = luong;
 	}
 
